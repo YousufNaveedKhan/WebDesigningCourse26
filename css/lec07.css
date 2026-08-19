@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid indigo;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+.about, .skills, .portfolio {
+    padding: 20px 40px;
+    margin-top: 10px;
+}
+
+.about h2, .skills h2, .portfolio h2 {
+    display: inline;
+    color: indigo;
+    border-bottom: 4px solid indigo;
+}
+
+.about p {
+    border: 2px solid teal;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: teal;
+    padding: 6px 15px 6px 15px;
+    color: white;
+    border-radius: 8px;
+}
+
+.portfolio a {
+    text-decoration: none;
+}
+
+.btn-alt {
+    background-color: orange;
+}
+
+.hire-btn {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+.footer {
+    background-color: indigo;
+    text-align: center;
+    padding: 20px 40px;
+    color: white;
+}
