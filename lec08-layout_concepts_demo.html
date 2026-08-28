@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec08 - Layout Concepts Demo</title>
+    <style>
+        body { font-family: system-ui, sans-serif; padding: 20px; }
+        h1 { color: indigo; border-bottom: 2px solid indigo; padding-bottom: 5px; }
+        h2 { color: teal; border-bottom: 2px solid teal; padding-bottom: 5px; margin-top: 50px; }
+        .box { padding: 12px; background-color: teal; color: white; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <h1>Lec08 - Layout Concepts Demo</h1>
+    <p>Yeh file hum sirf concepts k demo k liye bnarhe hain.</p>
+
+    <!-- ============================================================== -->
+    <h2>1. FLOAT</h2> 
+
+    <h3>(a) WITHOUT float</h3>
+    <div style="width: 120px;" class="box">
+        Box A
+    </div>
+    <p>Yeh paragraph next line se start hoga kiunkeh box p float nahi lga hua hai.</p>
+
+    <h3>(b) WITH float</h3>
+    <div class="box" style="width: 120px; float: left; margin-right: 15px;">
+        Box B
+    </div>
+    <p>Yeh paragraph isi box k around wrap krega.</p>
+    <p style="clear: both;">Lorem ipsum, dolor  amet consectetur adipisicing elit. sit Nihil sapiente aspernatur quasi eaque, qui fugiat veritatis a pariatur magnam illo modi rem. Non quaerat mollitia id dolores ipsa excepturi facere!</p>
+
+    <div style="max-width: 650px; border: 1px solid #ccc; padding: 20px; background-color: #fafafd;">
+        <h2 style="border: none; color: #111; margin: 0 0 5px 0; font-size: 26px;">Aptech Student Launch First Project</h2>
+        <p style="margin: 0 0 5px 0; font-style: italic; font-size: 16px; ">Aptech Gulshan 2 Web Design Batch - AI-2026-06G</p>
+
+        <img src="images/img2.jpg" alt="Student" style="margin: 10px; border: 1px solid #ccc; float: left; ">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur maiores tempore tenetur perspiciatis rerum recusandae, a amet debitis atque non, ut officia numquam fuga corrupti minima et voluptatem. Sequi?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eaque repellat cum harum animi commodi nihil qui, dolorem expedita numquam magni sequi accusantium rerum! Placeat nihil at consectetur voluptates ad?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor iure esse dolore debitis maiores laboriosam explicabo deserunt quia provident. Fugit aliquam ad rerum placeat voluptates expedita voluptate ut esse.
+        </p>
+        <p style="clear: both;">Aptech Gulshan 2</p>
+    </div>
+</body>
+</html>
