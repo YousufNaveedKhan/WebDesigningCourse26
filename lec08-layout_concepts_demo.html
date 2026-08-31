@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lec08 - Layout Concepts Demo</title>
     <style>
-        body { font-family: system-ui, sans-serif; padding: 20px; }
-        h1 { color: indigo; border-bottom: 2px solid indigo; padding-bottom: 5px; }
-        h2 { color: teal; border-bottom: 2px solid teal; padding-bottom: 5px; margin-top: 50px; }
-        .box { padding: 12px; background-color: teal; color: white; border-radius: 6px; }
+        body {
+            font-family: system-ui, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: indigo;
+            border-bottom: 2px solid indigo;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            color: teal;
+            border-bottom: 2px solid teal;
+            padding-bottom: 5px;
+            margin-top: 50px;
+        }
+
+        .box {
+            padding: 12px;
+            background-color: teal;
+            color: white;
+            border-radius: 6px;
+        }
+
+        #relative {
+            position: relative;
+            top: 20px;
+            left: 190px;
+        }
+
+        #absolute {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+        }
+
+        .fab {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            padding: 12px;
+            border: none;
+            background-color: teal;
+            border-radius: 8px;
+        }
+        .btn {
+            position: sticky;
+            top: 1px;
+            right: 40px;
+            padding: 12px;
+            border: none;
+            background-color: teal;
+            border-radius: 8px;
+        }
     </style>
 </head>
+
 <body>
+    
     <h1>Lec08 - Layout Concepts Demo</h1>
     <p>Yeh file hum sirf concepts k demo k liye bnarhe hain.</p>
 
+            <h3 style="top: 100px;">(e) STICKY EXAMPLE</h3>
+                <button class="btn">It's Sticky</button>
+
+
+    <b>Huzaifa</b>
+    <strong>Huzaifa</strong> // Better for SEO
     <!-- ============================================================== -->
-    <h2>1. FLOAT</h2> 
+    <h2>1. FLOAT</h2>
 
     <h3>(a) WITHOUT float</h3>
     <div style="width: 120px;" class="box">
@@ -29,19 +89,57 @@
         Box B
     </div>
     <p>Yeh paragraph isi box k around wrap krega.</p>
-    <p style="clear: both;">Lorem ipsum, dolor  amet consectetur adipisicing elit. sit Nihil sapiente aspernatur quasi eaque, qui fugiat veritatis a pariatur magnam illo modi rem. Non quaerat mollitia id dolores ipsa excepturi facere!</p>
+    <p style="clear: both;">Lorem ipsum, dolor amet consectetur adipisicing elit. sit Nihil sapiente aspernatur quasi
+        eaque, qui fugiat veritatis a pariatur magnam illo modi rem. Non quaerat mollitia id dolores ipsa excepturi
+        facere!</p>
 
     <div style="max-width: 650px; border: 1px solid #ccc; padding: 20px; background-color: #fafafd;">
-        <h2 style="border: none; color: #111; margin: 0 0 5px 0; font-size: 26px;">Aptech Student Launch First Project</h2>
-        <p style="margin: 0 0 5px 0; font-style: italic; font-size: 16px; ">Aptech Gulshan 2 Web Design Batch - AI-2026-06G</p>
+        <h2 style="border: none; color: #111; margin: 0 0 5px 0; font-size: 26px;">Aptech Student Launch First Project
+        </h2>
+        <p style="margin: 0 0 5px 0; font-style: italic; font-size: 16px; ">Aptech Gulshan 2 Web Design Batch -
+            AI-2026-06G</p>
 
         <img src="images/img2.jpg" alt="Student" style="margin: 10px; border: 1px solid #ccc; float: left; ">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur maiores tempore tenetur perspiciatis rerum recusandae, a amet debitis atque non, ut officia numquam fuga corrupti minima et voluptatem. Sequi?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eaque repellat cum harum animi commodi nihil qui, dolorem expedita numquam magni sequi accusantium rerum! Placeat nihil at consectetur voluptates ad?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor iure esse dolore debitis maiores laboriosam explicabo deserunt quia provident. Fugit aliquam ad rerum placeat voluptates expedita voluptate ut esse.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur maiores tempore tenetur
+            perspiciatis rerum recusandae, a amet debitis atque non, ut officia numquam fuga corrupti minima et
+            voluptatem. Sequi?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eaque repellat cum harum animi commodi
+            nihil qui, dolorem expedita numquam magni sequi accusantium rerum! Placeat nihil at consectetur voluptates
+            ad?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor iure esse dolore debitis maiores
+            laboriosam explicabo deserunt quia provident. Fugit aliquam ad rerum placeat voluptates expedita voluptate
+            ut esse.
         </p>
         <p style="clear: both;">Aptech Gulshan 2</p>
     </div>
+
+    <!-- ============================================================== -->
+    <h2>2. POSITIONS</h2>
+
+
+    <div>
+        <h3 style="top: 100px;">(a) STATIC EXAMPLE</h3>
+        <h3 style="position: static; left: 200px">(a) STATIC EXAMPLE</h3>
+
+                <h3 style="top: 100px;">(b) Relative EXAMPLE</h3>
+
+        <div style="padding: 12px; border: 1px solid teal; display: inline; background-color: red; color: white; border-radius: 6px;" id="relative">
+            Relative Box
+        </div>
+        <b>Hello</b>
+
+                <h3 style="top: 100px;">(c) Absolute EXAMPLE</h3>
+
+        <div style="position: relative; padding: 20px; max-width: 380px; width: 100%; min-height: 180px; height: 100%; border: 1px solid teal; color: white; border-radius: 6px;">
+            <div style="padding: 12px; border: 1px solid teal; display: inline; background-color: blue; color: white; border-radius: 6px;" id="absolute">
+                Absolute Box
+            </div>
+        </div>
+        <h3 style="top: 100px;">(d) Fixed EXAMPLE</h3>
+
+        <button class="fab">Contact Us</button>
+    </div>
 </body>
+
 </html>
