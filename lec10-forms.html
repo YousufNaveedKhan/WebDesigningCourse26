@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec10 - Forms</title>
+</head>
+<body>
+    <!-- DEFAULT METHOD: GET -->
+    <form action="submit.php" method="post">
+        <label for="username">Name</label>
+        <input type="text" id="username" placeholder="eg.. John" name="un" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" name="ue" required>
+        <br>
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="up" required>
+        <br>
+        <label for="gender">Gender</label>
+        Male: <input type="radio" id="gender" name="gender">
+        Female: <input type="radio" id="gender" name="gender">
+
+        <br>
+        
+        <label for="course">Course</label>
+        <select id="course" name="uc">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JS</option>
+            <option value="Bootstrap">Bootstrap</option>
+        </select>
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
