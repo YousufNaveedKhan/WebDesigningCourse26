@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec11 - Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            border: 2px solid red;
+            height: 75vh;
+        }
+        .item {
+            width: 75px;
+            height: 75px;
+            border: 2px solid black;
+            background-color: teal;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/081f4a8d00.js" crossorigin="anonymous"></script>
+</body>
+</html>

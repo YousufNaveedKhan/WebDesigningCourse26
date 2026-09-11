@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec12 - LoginForm</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+
+        .login-box {
+            background-color: rgb(236, 234, 234);
+            border: 2px solid grey;
+            height: 350px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin: 4px;
+        }
+        .form-group input, .form-group label {
+            display: block;
+            margin: 4px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input {
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid grey;
+        }
+
+        .btn {
+            margin-top: 25px;
+
+        }
+
+        .btn button {
+            padding: 8px 24px 8px 24px;
+            border-radius: 6px;
+            background-color: darkorange;
+            cursor: pointer;
+        }
+
+        .btn button:hover {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <h2>Login</h2>
+            </div>
+            <div class="form-group">
+                <label for="">Username or Email</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="text">
+            </div>
+
+            <div class="btn">
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
