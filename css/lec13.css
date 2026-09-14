@@ -1,0 +1,70 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(
+        circle at 50% 0%, 
+        rgba(124,58,158,0.45),
+        transparent 35%
+    ), 
+    #202020;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 85%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 8px 10px 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+        135deg, 
+        rgba(134, 87, 168, 0.5),
+        rgba(228, 228, 228, 0.5)
+    ); 
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #d7d7df;
+    /* font-weight: bold; */
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+    color: indigo;
+}
+
+.btn-login {
+    padding: 11px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255,255,255,0.24);
+}
