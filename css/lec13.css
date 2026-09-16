@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* GLOBAL STYLES */
 * {
     margin: 0;
@@ -5,14 +7,14 @@
     box-sizing: border-box; 
 }
 
-body {
+body { 
     font-family: Arial, Helvetica, sans-serif;
     background: radial-gradient(
         circle at 50% 0%, 
-        rgba(124,58,158,0.45),
+        rgba(124,58,158, 0.45),
         transparent 35%
     ), 
-    #202020;
+    #111111;
     color: #ffffff;
     min-height: 100vh;
 }
@@ -36,6 +38,23 @@ body {
     backdrop-filter: blur(12px);
 }
 
+.logo {
+    font-family: 'Lobster Two', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    font-size: 22px;
+    /* font-family: sans-serif; */
+}
+
+.brand-icon {
+    /* font-size: 20px; */
+    background: rgb(0, 70, 70);
+    border-radius: 8px;
+}
+
 .navLinks {
     display: flex;
     align-items: center;
@@ -52,6 +71,7 @@ body {
 }
 
 .navLinks a:hover {
+    transform: translateY(-2px);
     color: indigo;
 }
 
@@ -68,3 +88,4 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(255,255,255,0.24);
 }
+
