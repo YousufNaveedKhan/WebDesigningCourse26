@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec17 - Animations</title>
+    <style>
+        .box {
+            height: 250px;
+            width: 350px;
+            background-color: teal;
+            /* animation: boxMoveKaro 2s ease-in-out 1s infinite alternate; */
+            animation: colorChangeKaro 2s ease-in-out 1s infinite alternate;
+        }
+
+        @keyframes colorChangeKaro {
+            0% {
+                background-color: teal;
+            }
+
+            25% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            75% {
+                background-color: yellow;
+            }
+
+            100% {
+                background-color: black;
+            }
+        }
+
+        @keyframes boxMoveKaro {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(300px);
+            }
+        }
+
+        button {
+            animation: transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 50%;
+            animation: bounceKaro 1s infinite alternate;
+        }
+
+        @keyframes bounceKaro {
+            to {
+                transform: translateY(-80px);
+            }
+        }
+
+        #box2 {
+            height: 250px;
+            width: 350px;
+            background-color: green;
+            animation: fadeOut 2s ;
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+
+    <button>Hello</button>
+
+    <div class="ball">
+
+    </div>
+
+    <div id="box2"></div>
+</body>
+
+</html>
