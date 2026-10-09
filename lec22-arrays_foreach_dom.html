@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+        }
+        #title {
+            font-size: 26px;
+            text-align: center;
+        }
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 50px;
+            gap: 40px; 
+        }
+
+        .card {
+            height: 150px;
+            width: 250px;
+            padding: 16px;
+            background-color: #ebe9e9;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">My Shop</div>
+    <div id="container"></div>
+    <script>
+        // Arrays
+        let students = ["Ayaan", "Ahyaan", "Ahad", "Abdul Sattar", "Ahmer", "Mustufa"];
+        console.log(students[4]);
+
+        // Arrays Methods
+        students.push("Ahmed");
+        console.log(students);
+
+        let arrLength = students.length;
+        console.log("Length of students array: " + arrLength)
+
+        // foreach
+        students.forEach(function (student) {
+            console.log(student)
+        })
+
+        // DOM Manipulation
+let products = [
+    { name: "Laptop", price: 30000, icon: "💻" },
+    { name: "Mobile", price: 15000, icon: "📱" },
+    { name: "Watch", price: 7500, icon: "⌚" },
+    { name: "Headphones", price: 2500, icon: "🎧" },
+    { name: "Keyboard", price: 1800, icon: "⌨️" },
+    { name: "Mouse", price: 800, icon: "🖱️" },
+    { name: "Tablet", price: 20000, icon: "📲" },
+    { name: "Camera", price: 25000, icon: "📷" },
+    { name: "Speaker", price: 3500, icon: "🔊" },
+    { name: "Television", price: 45000, icon: "📺" },
+    { name: "Printer", price: 12000, icon: "🖨️" },
+    { name: "Charger", price: 1000, icon: "🔌" },
+    { name: "Power Bank", price: 3000, icon: "🔋" },
+    { name: "Gaming Console", price: 55000, icon: "🎮" },
+    { name: "Microphone", price: 4000, icon: "🎤" }
+];
+
+        let title = document.getElementById('title');
+        console.log(title);
+        title.style.color = "blue"; 
+
+        let container = document.getElementById('container');
+
+        products.forEach(function (p) {
+            container.innerHTML += `
+            <div class='card'>
+                <h4>${p.icon}</h4>
+                <h2>${p.name}</h2>
+                <h3>${p.price}</h3>
+                </div>
+            `
+        })
+    </script>
+</body>
+</html>
