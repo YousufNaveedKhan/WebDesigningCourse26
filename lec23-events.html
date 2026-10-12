@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec23 - Events</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        .dark {
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Events in JavaScript</h1>
+
+    <!-- 1. COUNTER APP -->
+    <h2>Counter: <span id="countVal">0</span></h2>
+    <button id="incBtn">+ Increament</button>
+    <button id="decBtn">- Decreament</button>
+
+    <br><br>
+    <!-- 2. THEME -->
+    <button id="themeBtn">Dark Mode</button>
+
+    <br><br>
+
+    <!-- 3. INPUT -->
+    <input type="text" id="inputName" placeholder="Apna naam likho!">
+    <h2 id="greet">Hello!</h2>
+
+    <script>
+        // 1. COUNTER APP
+        let count = 0;
+        document.getElementById("incBtn").addEventListener("click", function () {
+            count++;
+            document.getElementById("countVal").textContent = count;
+        });
+
+        document.getElementById("decBtn").addEventListener("click", function () {
+            count--;
+            document.getElementById("countVal").textContent = count;
+        });
+
+        // 2. THEME TOGGLE
+        document.getElementById("themeBtn").addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+        });
+
+        // 3. INPUT
+        document.getElementById("inputName").addEventListener("input", function () {
+            let inputName = document.getElementById("inputName").value; 
+            document.getElementById("greet").textContent = "Hello " + inputName + "!";
+        })
+    </script>
+</body>
+
+</html>
