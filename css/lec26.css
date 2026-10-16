@@ -1,0 +1,137 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background design */
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #141e30,
+        #243b55,
+        #6a3093
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* Contact form card */
+.contact-form {
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+
+    padding: 35px;
+    color: white;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+/* Description */
+.contact-form p {
+    text-align: center;
+    color: #dddddd;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Input fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+
+    font-size: 15px;
+    outline: none;
+}
+
+/* Placeholder color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #dddddd;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 8px rgba(167, 139, 250, 0.4);
+}
+
+/* Message box */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit button */
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 22px;
+    }
+
+    .contact-form h1 {
+        font-size: 26px;
+    }
+}

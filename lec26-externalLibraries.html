@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- <link rel="stylesheet" href="css/lec26.css"> -->
+</head>
+
+<body>
+    <!-- 
+    <div class="container">
+
+        <form class="contact-form" action="https://formspree.io/f/xqpewnoa" method="POST">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you!</p>
+
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name"
+                placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email"
+                placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject"
+                placeholder="Enter subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"
+                placeholder="Write your message..."
+                required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div> -->
+
+    <button id="showAlert">Submit</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("showAlert").addEventListener("click", function () {
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Something went wrong!",
+                footer: "<a href=\"#\">Why do I have this issue?</a>"
+            });
+        })
+    </script>
+</body>
+
+</html>
